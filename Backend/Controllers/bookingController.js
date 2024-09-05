@@ -21,7 +21,7 @@ export const getCheckoutSession = async (req, res) => {
         {
           price_data: {
             currency: "usd",
-            unit_amount: (doctor.ticketPrice = 100),
+            unit_amount: doctor.ticketPrice * 100,
             product_data: {
               name: doctor.name,
               description: doctor.bio,
